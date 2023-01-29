@@ -1,0 +1,45 @@
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base {
+  h2{
+    color: #B19C5D;
+  }
+  h4{
+    color: #B19C5D;
+  }
+  .colorTextBlue p{
+    color: #5684A4;
+    font-size: 1.4rem;
+    padding-left: 2rem;
+    text-indent: 30px;
+  }
+  .colorTextBlue p span{
+    color: #B19C5D;
+  }
+  @font-face {
+    font-family: Prosto One;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./ProstoOne-Regular.ttf) format('ttf');
+  }
+  @font-face {
+    font-family: Caveat;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/caveat/v14/WnznHAc5bAfYB2QRah7pcpNvOx-pjfJ9eIipYSxP.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: Laptev_Brush;
+    font-style: normal;
+    /* font-weight: 900; */
+    font-display: block;
+    src: url(./Laptev_Brush.woff2) format('woff2');
+  }
+}
