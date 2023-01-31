@@ -1,9 +1,9 @@
 <template>
-    <main class="flex scrollBox">
+    <div class="flex scrollBox">
         <v-main class="h-screen w-screen mainBlock"> </v-main>
         <VServices class="services w-screen" />
         <VExamples class="examples w-screen" />
-    </main>
+    </div>
 </template>
 
 <script>
@@ -41,11 +41,12 @@ body {
     overflow-x: hidden;
     user-select: none;
     box-sizing: border-box;
+    height: 800px;
 }
 .animationText span {
     display: inline-block;
 }
 .scrollBox {
-    width: 300vw;
+    width: 310vw;
 }
 </style>

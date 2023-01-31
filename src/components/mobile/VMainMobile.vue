@@ -1,10 +1,10 @@
 <template>
     <div
-        class="flex flex-col justify-around p-4 h-96 relative"
+        class="flex flex-col justify-around w-screen sm:p-4 h-96 relative"
         @click.stop="curentTab = null"
     >
         <transition name="emergence">
-            <ul class="text-2xl text-main" v-if="!curentTab">
+            <ul class="text-2xl text-main mx-auto" v-if="!curentTab">
                 <li
                     v-for="(tab, key) in tabServices"
                     :key="tab.id"
@@ -94,11 +94,7 @@ export default {
                 : `....`;
         },
     },
-    methods: {
-        addForm() {
-            console.log(3);
-        },
-    },
+    methods: {},
 };
 </script>
 

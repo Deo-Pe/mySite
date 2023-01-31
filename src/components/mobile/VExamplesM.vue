@@ -4,7 +4,7 @@
         <h2 class="text-center w-screen font-ProstoOne text-2xl pt-12 pb-12">
             Примеры работ
         </h2>
-        <div class="flex flex-row flex-wrap justify-center">
+        <div class="flex sm:flex-row sm:flex-wrap sm:justify-center">
             <a
                 target="_blank"
                 href="https://deo-pe.github.io/tourizm/"

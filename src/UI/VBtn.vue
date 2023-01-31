@@ -8,7 +8,7 @@ export default {};
 <style scoped>
 .knopka01 {
     /* font-family: "Prosto One", cursive; */
-    display: inline-block;
+    display: block;
     width: 16rem;
     padding: 10px;
     font-size: 1.2rem;

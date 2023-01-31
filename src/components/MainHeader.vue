@@ -3,15 +3,14 @@
         class="
             flex
             justify-end
-            sm:justify-center
-            mt-16
+            pt-16
             sm:pt-4 sm:text-4xl
             text-5xl text-main
-            mr-16
+            pr-16
             sm:mr-0
         "
     >
-        <h1 class="w-2/3 sm:w-full px-4" id="textAnim">
+        <h1 class="xl:w-4/5 w-2/3 sm:w-full px-4" id="textAnim">
             <span ref="helloText" class="animationText">Привет! </span>
             <span ref="meNameText" class="animationText">Меня зовут </span>
             <span ref="nameText" class="animationText text-mycolor"
@@ -184,5 +183,8 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Prosto+One&display=swap");
 h1 {
     font-family: "Prosto One", cursive;
+}
+.animationText {
+    position: relative;
 }
 </style>

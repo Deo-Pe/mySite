@@ -1,8 +1,7 @@
 <template>
     <transition appear @enter="action">
         <svg
-            width="100%"
-            height="300"
+            class="svg1"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:svg="http://www.w3.org/2000/svg"
             viewBox="100 -20 300 500"
@@ -75,7 +74,6 @@ function action(el) {
             }).to(el.querySelector("#svg_2"), {
                 rotation: 7,
                 x: 8,
-                // x: "rotate(0.5turn);",
                 repeat: -1,
                 yoyo: true,
                 duration: 1.5,
@@ -87,6 +85,22 @@ emits("btnAnimation", true);
 
 
 <style scoped>
+.svg1 {
+    height: 300px;
+    width: 100%;
+}
+@media (min-width: 1536px) {
+    .svg1 {
+        height: 450px;
+        width: 60%;
+    }
+}
+@media (min-width: 1024px) {
+    .svg1 {
+        height: 400px;
+        width: 100%;
+    }
+}
 #svg_19 {
     animation-name: active-path;
     animation-fill-mode: forwards;

@@ -1,17 +1,16 @@
 <template>
-    <section class="overflow-x-hidden">
-        <VContactM v-show="isContact" @closeForm="closeForm" />
+    <section class="wrap">
         <MainHeader></MainHeader>
+        <VContactM v-show="isContact" @closeForm="closeForm" />
         <VImageM @btnAnimation="btnAnimation"></VImageM>
-        <transition @enter="btnAnimation" appear>
-            <main-btn
-                ref="btnM"
-                @click="addForm"
-                class="my-12 md:mx-72 mx-10 opacity-0"
-                >Заказать</main-btn
-            >
+        <transition
+            @enter="btnAnimation"
+            class="my-12 mx-auto opacity-0 2xl:h-14"
+            appear
+        >
+            <main-btn ref="btnM" @click="addForm">Заказать</main-btn>
         </transition>
-        <VMainMobile class="mb-24 md:mx-auto" />
+        <VMainMobile class="mb-24" />
         <VExamplesM />
     </section>
 </template>
@@ -58,4 +57,7 @@ export default {
 </script>
 
 <style scoped>
+/* .wrap {
+    padding: auto;
+} */
 </style>
