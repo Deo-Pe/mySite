@@ -1,14 +1,6 @@
 <template>
     <div
-        class="
-            flex
-            justify-end
-            pt-16
-            sm:pt-4 sm:text-4xl
-            text-5xl text-main
-            pr-16
-            sm:mr-0
-        "
+        class="flex justify-end pt-16 sm:pt-4 sm:text-4xl text-5xl text-main pr-16 sm:mr-0"
     >
         <h1 class="xl:w-4/5 w-2/3 sm:w-full px-4" id="textAnim">
             <span ref="helloText" class="animationText">Привет! </span>
@@ -25,18 +17,7 @@
     </div>
     <p
         ref="textVuejs"
-        class="
-            text-2xl
-            sm:text-base
-            font-Caveat
-            text-right
-            sm:text-center
-            text-mycolor
-            mr-40
-            sm:mr-0
-            mt-3
-            animationText
-        "
+        class="text-2xl sm:text-base font-Caveat text-right sm:text-center text-mycolor mr-40 sm:mr-0 mt-3 animationText"
     >
         React, Vue.js, GreenSock, Tailwind, Node, Express.
     </p>
@@ -49,14 +30,16 @@ export default {
     },
     emits: ["endAnimationHeader"],
     mounted() {
-        this.wrapLetеer(this.$refs.helloText);
-        this.wrapLetеer(this.$refs.meNameText);
-        this.wrapLetеer(this.$refs.myText);
-        this.wrapLetеer(this.$refs.devText);
-        this.wrapWord(this.$refs.nameText);
-        this.wrapWord(this.$refs.frontText);
-        this.wrapWord(this.$refs.textVuejs);
-        this.startAnim();
+        if (this.$version) {
+            this.wrapLetеer(this.$refs.helloText);
+            this.wrapLetеer(this.$refs.meNameText);
+            this.wrapLetеer(this.$refs.myText);
+            this.wrapLetеer(this.$refs.devText);
+            this.wrapWord(this.$refs.nameText);
+            this.wrapWord(this.$refs.frontText);
+            this.wrapWord(this.$refs.textVuejs);
+            this.startAnim();
+        }
     },
     methods: {
         startAnim() {
@@ -73,7 +56,7 @@ export default {
             tl.from(helloText.querySelectorAll(".leter"), 0.6, {
                 opacity: 0,
                 scale: 0.1,
-                x: "random(-600, 600)",
+                x: "random(-200, 200)",
                 y: "random(-200, 200)",
                 z: "random(-300, 300)",
                 stagger: 0.05,
